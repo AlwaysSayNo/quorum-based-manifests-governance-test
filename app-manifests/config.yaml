@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: my-config
 data:
-  version: v1763630554
+  version: v1763634860
