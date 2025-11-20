@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: test-app
-  namespace: argocd
+  namespace: argocd:test-app
 spec:
   project: default
   source:
@@ -17,3 +17,7 @@ spec:
     automated:
       prune: true
       selfHeal: true
+
+# kubectl port-forward service/argocd-server -n argocd 8080:443
+# kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+# kubectl get application test-app -n argocd -o wide
