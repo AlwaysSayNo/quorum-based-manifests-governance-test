@@ -15,5 +15,6 @@ spec:
     namespace: test-app
   syncPolicy:
     automated:
+      enabled: false
       prune: true
       selfHeal: true
