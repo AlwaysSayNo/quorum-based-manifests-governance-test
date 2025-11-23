@@ -4,9 +4,9 @@ kind: ManifestRequestTemplate
 metadata:
   name: mrt-sample
   namespace: test-app
-  version: 1
 
 spec:
+  version: 1
   publicKey: |
     -----
 
@@ -44,4 +44,4 @@ spec:
       - atLeast: 2
         require:
           - signer: 
-          - signer: 
+          - signer:
