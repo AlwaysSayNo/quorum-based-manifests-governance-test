@@ -28,14 +28,11 @@ spec:
   governors:
     notificationChannels:
       - slack:
-          groupID: C87654321
+          channelID: C87654321
     members:
       - alias: voter1
         publicKey: |
           -----
-        notificationChannel:
-          slack:
-            userGroupID: C12345678
       - alias: voter2
         publicKey: |
           -----
