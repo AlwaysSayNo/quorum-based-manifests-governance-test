@@ -7,6 +7,9 @@ metadata:
 
 spec:
   version: 1
+
+  gitRepository:
+    url: git@github.com:AlwaysSayNo/quorum-based-manifests-governance-test.git
   
   pgp:
     publicKey: |
