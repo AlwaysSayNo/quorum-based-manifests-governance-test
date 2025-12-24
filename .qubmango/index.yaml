@@ -18,6 +18,4 @@ metadata:
   managedfields: []
 spec:
   policies:
-  - alias: test-ns:mrt-my
-    governancePath: manifest-signing-requests
 status: {}
