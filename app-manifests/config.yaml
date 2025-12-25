@@ -4,4 +4,4 @@ metadata:
   name: config-my
   namespace: test-ns
 data:
-  version: v1766686559
+  version: v1766687151
