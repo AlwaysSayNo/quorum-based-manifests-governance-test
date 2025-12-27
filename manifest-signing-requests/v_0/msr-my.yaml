@@ -6,7 +6,7 @@ objectmeta:
   namespace: test-ns
 spec:
   version: 0
-  commitsha: f46634fb421e252d1b561c22e62cb1d91d4a613d
+  commitsha: 74c5686d48b5743a9ea7fc926216979891719d61
   mrt:
     name: mrt-my
     namespace: test-ns
