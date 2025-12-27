@@ -17,5 +17,7 @@ metadata:
   finalizers: []
   managedfields: []
 spec:
-  policies: []
+  policies:
+  - alias: test-ns:mrt-my
+    governancePath: manifest-signing-requests
 status: {}
