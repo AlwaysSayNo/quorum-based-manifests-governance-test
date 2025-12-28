@@ -37,7 +37,7 @@ spec:
     -----END PGP PUBLIC KEY BLOCK-----
   gitrepository:
     sshurl: git@github.com:AlwaysSayNo/quorum-based-manifests-governance-test.git
-  lastapprovedcommitsha: aae1686e67e1bfd1956acf2d22084653838db9ba
+  lastapprovedcommitsha: 3c390477aacb9eed79d3bec8e5378ee1036cdf6e
   location:
     folder: manifest-signing-requests
   changes:
