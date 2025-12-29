@@ -6,7 +6,7 @@ objectmeta:
   namespace: test-ns
 spec:
   version: 0
-  commitsha: ada865457eb5675fbf6ee4faac1111646dc3885b
+  commitsha: cc25ba646658ec74c42ac538b6e9dc2b2145402f
   mrt:
     name: mrt-my
     namespace: test-ns
@@ -40,7 +40,7 @@ spec:
     status: New
     name: application-my
     namespace: argocd
-    sha256: ad98057e1612b7f586bf16179c804ea3f0e28eac48cea541de493a93451b570a
+    sha256: ec27d6d561f7b540dfc7e418f24b94a4bf9adab37c25c5ccbdd4a85cbb6983df
     path: app-manifests/app.yaml
   - kind: ConfigMap
     status: New
