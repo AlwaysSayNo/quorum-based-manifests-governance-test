@@ -45,8 +45,8 @@ spec:
     name: application-my
     namespace: argocd
 
-  location:
-    folder: manifest-signing-requests
+  locations:
+    governancePath: manifest-signing-requests
 
   msr:
     name: msr-my
