@@ -17,5 +17,13 @@ metadata:
   finalizers: []
   managedfields: []
 spec:
-  policies: []
+  policies:
+  - alias: test-ns:mrt-my
+    governancePath: qubmango
+    msr:
+      name: msr-my
+      namespace: test-ns
+    mca:
+      name: mca-my
+      namespace: test-ns
 status: {}
