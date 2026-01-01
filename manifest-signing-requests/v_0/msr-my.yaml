@@ -1,18 +1,17 @@
-typemeta:
-  kind: ManifestSigningRequest
-  apiversion: governance.nazar.grynko.com/v1alpha1
-objectmeta:
+kind: ManifestSigningRequest
+apiversion: governance.nazar.grynko.com/v1alpha1
+metadata:
   name: msr-my
   namespace: test-ns
 spec:
   version: 0
-  commitsha: add837016b6f78911b6bc0739492b318e073b4fc
-  previouscommitsha: ""
+  commitSha: 2524ac70de5620e5f151f7d4a55d05a43c9a6576
+  previousCommitSha: ""
   mrt:
     name: mrt-my
     namespace: test-ns
     version: 1
-  publickey: |
+  publicKey: |
     -----BEGIN PGP PUBLIC KEY BLOCK-----
 
     mI0EaTxCkAEEAOeRfYJvgCQGEzeIvatY2LlvFwwXURQ0kgMrq+iu5VCS7CBGEmDV
@@ -32,11 +31,11 @@ spec:
     fm6vBsLZ3jx+UPP5BgefsmG//mihRnTv9bzSQLpXitA6VU2LzkfVTH+Yxg==
     =7D/e
     -----END PGP PUBLIC KEY BLOCK-----
-  gitrepository:
-    sshurl: git@github.com:AlwaysSayNo/quorum-based-manifests-governance-test.git
+  gitRepository:
+    sshUrl: git@github.com:AlwaysSayNo/quorum-based-manifests-governance-test.git
   locations:
-    governancepath: manifest-signing-requests
-    sourcepath: app-manifests
+    governancePath: manifest-signing-requests
+    sourcePath: app-manifests
   changes:
   - kind: Application
     status: New
@@ -63,12 +62,12 @@ spec:
     sha256: 3ec002b4951bb688b6f0ce4b5c44973b2794553c96217cc713e3a175f99ff4b0
     path: app-manifests/namespace.yaml
   governors:
-    notificationchannels:
+    notificationChannels:
     - slack:
-        channelid: C87654321
+        channelID: C87654321
     members:
     - alias: owner
-      publickey: |
+      publicKey: |
         -----BEGIN PGP PUBLIC KEY BLOCK-----
         Version: Keybase OpenPGP v1.0.0
         Comment: https://keybase.io/crypto
@@ -125,7 +124,7 @@ spec:
         =2Og1
         -----END PGP PUBLIC KEY BLOCK-----
     - alias: voter1
-      publickey: |
+      publicKey: |
         -----BEGIN PGP PUBLIC KEY BLOCK-----
         Version: Keybase OpenPGP v1.0.0
         Comment: https://keybase.io/crypto
@@ -182,7 +181,7 @@ spec:
         =a/zo
         -----END PGP PUBLIC KEY BLOCK-----
     - alias: voter2
-      publickey: |
+      publicKey: |
         -----BEGIN PGP PUBLIC KEY BLOCK-----
 
         mQENBGlWd9EBCADQWJ8nDEf9YGJEj0Maj4rBxd0xvAZ4OleWae+MBqTPVqKhF60/
@@ -214,31 +213,15 @@ spec:
         =bfc6
         -----END PGP PUBLIC KEY BLOCK-----
     - alias: voter3
-      publickey: |
+      publicKey: |
         -----
   require:
-    atleast: null
     all: true
     require:
-    - atleast: null
-      all: null
-      require: []
-      signer: owner
-    - atleast: 1
-      all: null
+    - signer: owner
+    - atLeast: 1
       require:
-      - atleast: null
-        all: null
-        require: []
-        signer: voter1
-      - atleast: null
-        all: null
-        require: []
-        signer: voter2
-      - atleast: null
-        all: null
-        require: []
-        signer: voter3
-      signer: ""
-    signer: ""
+      - signer: voter1
+      - signer: voter2
+      - signer: voter3
   status: Approved
