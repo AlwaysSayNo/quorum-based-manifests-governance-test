@@ -5,7 +5,7 @@ metadata:
   namespace: test-ns
 spec:
   version: 0
-  commitSha: 612aedf381f313c20d00c753b81e2bd236943182
+  commitSha: 30a2e96f7a598c7c93ff0f1bd5dc780cc8941dea
   previousCommitSha: ""
   mrt:
     name: mrt-my
@@ -37,7 +37,7 @@ spec:
     -----END PGP PUBLIC KEY BLOCK-----
   gitRepository:
     sshUrl: git@github.com:AlwaysSayNo/quorum-based-manifests-governance-test.git
-  lastApprovedCommitSHA: 612aedf381f313c20d00c753b81e2bd236943182
+  lastApprovedCommitSHA: 30a2e96f7a598c7c93ff0f1bd5dc780cc8941dea
   locations:
     governancePath: manifest-signing-requests
     sourcePath: app-manifests
