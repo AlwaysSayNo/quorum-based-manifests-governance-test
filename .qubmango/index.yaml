@@ -17,13 +17,5 @@ metadata:
   finalizers: []
   managedfields: []
 spec:
-  policies:
-  - alias: test-ns:mrt-my
-    governancePath: manifest-signing-requests
-    msr:
-      name: msr-my
-      namespace: test-ns
-    mca:
-      name: mca-my
-      namespace: test-ns
+  policies: []
 status: {}
