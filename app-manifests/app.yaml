@@ -24,3 +24,8 @@ spec:
       namespace: argocd
       jsonPointers:
       - /spec/source/targetRevision
+    - group: governance.nazar.grynko.com
+      kind: ManifestRequestTemplate
+      jsonPointers:
+      - /status
+      - /metadata/finalizers
