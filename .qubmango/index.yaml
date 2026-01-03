@@ -17,6 +17,5 @@ metadata:
   finalizers: []
   managedfields: []
 spec:
-  policies:
-  - alias: test-ns:mrt-my
+  policies: []
 status: {}
