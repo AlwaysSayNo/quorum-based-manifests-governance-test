@@ -1,0 +1,29 @@
+kind: QubmangoIndex
+apiversion: governance.nazar.grynko.com/v1alpha1
+metadata:
+  name: ""
+  generatename: ""
+  namespace: ""
+  selflink: ""
+  uid: ""
+  resourceversion: ""
+  generation: 0
+  creationtimestamp: "0001-01-01T00:00:00Z"
+  deletiontimestamp: null
+  deletiongraceperiodseconds: null
+  labels: {}
+  annotations: {}
+  ownerreferences: []
+  finalizers: []
+  managedfields: []
+spec:
+  policies:
+  - alias: test-ns:mrt-my
+    governancePath: manifest-signing-requests
+    msr:
+      name: msr-my
+      namespace: test-ns
+    mca:
+      name: mca-my
+      namespace: test-ns
+status: {}
