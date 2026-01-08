@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-delete-1-my
+  namespace: test-ns
+data:
+  version: v1767717755
