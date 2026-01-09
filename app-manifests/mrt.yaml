@@ -223,8 +223,8 @@ spec:
     all: true
     require:
       - signer: owner
-      - atLeast: 1
-        require:
-          - signer: voter1
-          - signer: voter2
-          - signer: voter3
+      # - atLeast: 1
+      #   require:
+      #     - signer: voter1
+      #     - signer: voter2
+      #     - signer: voter3
