@@ -4,4 +4,4 @@ metadata:
   name: config-delete-my
   namespace: test-ns
 data:
-  version1: v1767717755q22
+  version1: v1767717755q2212
