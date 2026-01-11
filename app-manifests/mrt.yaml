@@ -215,6 +215,7 @@ spec:
       - alias: voter3
         publicKey: |
           -----
+          asd
 
   require:
     all: true
