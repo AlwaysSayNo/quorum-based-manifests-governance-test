@@ -1,8 +1,0 @@
-# Summary of DELETED resources
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: config-delete-1-my
-  namespace: test-ns
-data:
-  version2: v17677177552223
