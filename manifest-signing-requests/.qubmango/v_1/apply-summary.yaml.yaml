@@ -1,0 +1,8 @@
+# Summary of NEW and MODIFIED resources
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-my
+  namespace: test-ns
+data:
+  version: v1768168616
