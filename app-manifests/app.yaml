@@ -4,7 +4,7 @@ metadata:
   name: application-my
   namespace: argocd-my-ns
 spec:
-  project: default
+  project: my-custom-project
   source:
     # The URL of new public GitHub repository
     repoURL: https://github.com/AlwaysSayNo/quorum-based-manifests-governance-test.git
