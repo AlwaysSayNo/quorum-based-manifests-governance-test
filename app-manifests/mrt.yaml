@@ -11,9 +11,9 @@ spec:
   gitRepository:
     ssh:
       url: git@github.com:AlwaysSayNo/quorum-based-manifests-governance-test.git
-    secretsRef:
-      name: ssh-secret-my
-      namespace: test-ns
+      secretsRef:
+        name: ssh-secret-my
+        namespace: test-ns
 
   pgp:
     publicKey: |
