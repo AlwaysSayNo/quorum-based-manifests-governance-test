@@ -6,7 +6,7 @@ metadata:
   namespace: test-ns
 
 spec:
-  version: 1
+  version: 2
   
   gitRepository:
     ssh:
