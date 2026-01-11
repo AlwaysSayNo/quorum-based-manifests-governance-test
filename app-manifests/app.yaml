@@ -2,9 +2,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: application-my
-  namespace: argocd-my-ns
+  namespace: argocd
 spec:
-  project: my-custom-project
+  project: default
   source:
     # The URL of new public GitHub repository
     repoURL: https://github.com/AlwaysSayNo/quorum-based-manifests-governance-test.git
