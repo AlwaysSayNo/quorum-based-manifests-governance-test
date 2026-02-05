@@ -5,7 +5,7 @@ metadata:
   namespace: test-ns
 spec:
   version: 0
-  commitSha: b87af0eacaa09e3788e3dd4ec147852268fc140d
+  commitSha: 753af426be6fbe496c9f6205889cf54450cbd50d
   previousCommitSha: ""
   mrt:
     name: mrt-my
