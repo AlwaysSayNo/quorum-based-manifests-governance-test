@@ -1,0 +1,44 @@
+# Summary of NEW and MODIFIED resources
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: application-my
+  namespace: argocd
+spec:
+  project: default
+  source:
+    # The URL of new public GitHub repository
+    repoURL: https://github.com/AlwaysSayNo/quorum-based-manifests-governance-test.git
+    targetRevision: HEAD
+    path: app-manifests
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: test-app
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - RespectIgnoreDifferences=true
+  ignoreDifferences:
+    - group: argoproj.io
+      kind: Application
+      name: application-my # Matches its own name and namespace
+      namespace: argocd
+      jsonPointers:
+        - /spec/source/targetRevision
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-my
+  namespace: test-ns
+data:
+  version: v1770126609
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: test-ns
+  labels:
+    name: test-ns
