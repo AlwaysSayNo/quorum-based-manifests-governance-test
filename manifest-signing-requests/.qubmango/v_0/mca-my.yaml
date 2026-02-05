@@ -5,7 +5,7 @@ metadata:
   namespace: test-ns
 spec:
   version: 0
-  commitSha: 84336152f743c739cbc95ebfe1a29c59560edcec
+  commitSha: 413140da35bf81d61f815dee71727ad16232c680
   previousCommitSha: ""
   mrt:
     name: mrt-my
@@ -52,6 +52,12 @@ spec:
     namespace: test-ns
     sha256: bd86c477f1dea3d2d43af329025d11546082077957401fd493ca6c01af682664
     path: app-manifests/config.yaml
+  - kind: ManifestRequestTemplate
+    status: New
+    name: mrt-my
+    namespace: test-ns
+    sha256: 4ebc439602f5e564b4610afe20fef727a8d4fd74916f9901eef8448795cf604c
+    path: app-manifests/mrt.yaml
   - kind: Namespace
     status: New
     name: test-ns
