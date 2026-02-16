@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     # The URL of new public GitHub repository
-    repoURL: git@github.com:AlwaysSayNo/quorum-based-manifests-governance-test.git
+    repoURL: https://github.com/AlwaysSayNo/quorum-based-manifests-governance-test.git
     targetRevision: HEAD
     path: app-manifests
   destination:
