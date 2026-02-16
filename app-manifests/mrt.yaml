@@ -222,4 +222,3 @@ spec:
       - signer: owner
       - signer: voter1
       - signer: voter2
-      - signer: voter3
