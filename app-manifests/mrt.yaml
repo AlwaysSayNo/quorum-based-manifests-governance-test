@@ -55,11 +55,11 @@ spec:
 
   msr:
     name: msr-my
-    namespace: test-ns1
+    namespace: test-ns
   
   mca:
     name: mca-my
-    namespace: test-ns1
+    namespace: test-ns
 
   governors:
     notificationChannels:
