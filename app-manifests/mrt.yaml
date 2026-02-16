@@ -6,7 +6,7 @@ metadata:
   namespace: test-ns
 
 spec:
-  version: 1
+  version: 2
   
   gitRepository:
     ssh:
@@ -44,7 +44,7 @@ spec:
     slack:
       secretsRef:
         name: slack-secret-my
-        namespace: test-ns
+        namespace: test-ns1
 
   argoCD:
     application:
@@ -55,11 +55,11 @@ spec:
 
   msr:
     name: msr-my
-    namespace: test-ns
+    namespace: test-ns1
   
   mca:
     name: mca-my
-    namespace: test-ns
+    namespace: test-ns1
 
   governors:
     notificationChannels:
