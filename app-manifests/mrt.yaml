@@ -221,4 +221,3 @@ spec:
     require:
       - signer: owner
       - signer: voter1
-      - signer: voter2
