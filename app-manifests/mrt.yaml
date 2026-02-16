@@ -44,7 +44,7 @@ spec:
     slack:
       secretsRef:
         name: slack-secret-my
-        namespace: test-ns1
+        namespace: test-ns
 
   argoCD:
     application:
